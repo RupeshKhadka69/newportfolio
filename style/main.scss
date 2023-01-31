@@ -116,7 +116,6 @@ body {
     font-size: 1rem;
     letter-spacing: -.025em;
     -webkit-font-smoothing: antialiased;
-    /* background-color: var(--ptf-color-14); */
     background-color: #121212 ;
 	
 	overflow-x: hidden;
@@ -294,7 +293,7 @@ img,picture {
 }
 .parallex-bg::before {    
     content: "";
-    background-image: url(/image/blackandwhite.jpg);
+    background-image: url(./image/blackandwhite.jpg);
     background-position: center;
     
     background-size: cover;
@@ -307,7 +306,7 @@ img,picture {
     left: 0px;
     opacity: 0.55;
 }
-/* footer section */
+/* footer section */ 
 
 .footer-section {
     width: 100%;
