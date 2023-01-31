@@ -2,9 +2,10 @@ var bg = document.querySelector('.item-bg');
 var items = document.querySelectorAll('.news__item');
 var item = document.querySelector('.news__item');
 
-function cLog(content) {
-    console.log(content)
-}
+window.addEventListener('scroll', function(){
+    const header = document.querySelector('header')
+    header.classList.toggle('sticky', window.scrollY > 20 )
+})
 
 if($(window).width() > 800) {
     $(document).on("mouseover", ".news__item", function (_event, _element) {
@@ -139,3 +140,16 @@ hamburger.addEventListener('click', function(){
     }, 600);
     })
     
+ const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        }
+        else {
+            entry.classList.remove('show')
+        }
+    })
+ })   
+ const hiddenElements = document.querySelectorAll('.text-animation')
+ hiddenElements.forEach((el) => observer.observe(el))
+

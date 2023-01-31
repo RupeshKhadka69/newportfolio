@@ -175,9 +175,20 @@ img,picture {
     color: var(--ptf-color-11);
 
 }
+header.sticky {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: black;
+  width: 100%;
+  padding-inline: 1rem;
+}
 
 .ul {
     gap: 3rem;
+    z-index: 10000;
 }
 .ul li {
     list-style: none;
@@ -664,6 +675,24 @@ a, a:hover {
 .hamburger {
   cursor: pointer;
 }
+.text-animation {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  filter: blur(3px);
+  transform: translateX(-3%);
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@media(prefers-reduced-motion) {
+  .text-animation {
+    transition: none;
+  }
+  
+}
+
 
 @media screen and (max-width: 992px){
   .container{
