@@ -361,8 +361,7 @@ a, a:hover {
   opacity: 0;
   transition: all .3s;
   left: -30px;
-  //left: 50%;
-  //transform: translateX(-50%);
+  
 
   &.active {
     left: 0;

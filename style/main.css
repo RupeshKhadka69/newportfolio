@@ -116,7 +116,6 @@ body {
   font-size: 1rem;
   letter-spacing: -0.025em;
   -webkit-font-smoothing: antialiased;
-  /* background-color: var(--ptf-color-14); */
   background-color: #121212;
   overflow-x: hidden;
 }
@@ -376,7 +375,7 @@ img, picture {
 
 .parallex-bg::before {
   content: "";
-  background-image: url(/image/blackandwhite.jpg);
+  background-image: url(./image/blackandwhite.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
